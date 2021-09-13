@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         //1
+        String final_str = "";
+        System.out.println("Введите строку: ");
         Scanner line = new Scanner(System.in);
         String str = line.nextLine();
         String split_str[] = str.split("");
@@ -28,10 +30,11 @@ public class Main {
             if (el[0] == null)
                 break;
             if (!el[1].equals("1"))
-                System.out.print(el[0] + el[1]);
+                final_str += el[0] + el[1];
             else
-                System.out.print(el[0]);
+                final_str += el[0];
         }
+        System.out.print(final_str);
 
         //2
 
